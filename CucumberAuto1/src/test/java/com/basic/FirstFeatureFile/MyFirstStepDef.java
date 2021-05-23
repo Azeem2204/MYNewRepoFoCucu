@@ -18,9 +18,10 @@ public class MyFirstStepDef {
 	{
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\AZEEMUDDIN\\Cucumberworkspace\\CucumberAuto1\\src\\test\\resources\\Browser Drivers\\chromedriver.exe");
 		driver =  new ChromeDriver();
+		driver.manage().window().maximize();
 		driver.get("https://www.facebook.com/");
 		driver.findElement(By.xpath("//*[@class='_6ltg']/a")).click();
-		Thread.sleep(5000);
+		Thread.sleep(3000);
 		
 		
 	}
